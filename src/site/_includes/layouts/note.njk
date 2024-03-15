@@ -93,14 +93,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% include imp %}
     {% endfor %}
     {%include "components/lucideIcons.njk"%}
-<h3>поділитись! (чи ще щось...)</h3>
-
-<p>
-  <a href="https://www.facebook.com/sharer.php?u={{ rootURL | url_encode }}{{ page.url | url_encode }}">Facebook</a> ~
-  <a href="https://twitter.com/intent/tweet?url={{ rootURL | url_encode }}{{ page.url}}&text={{title | url_encode}}">Twitter</a> ~
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ rootURL | url_encode }}{{ page.url | url_encode }}">LinkedIn</a>
-</p>
-
     <script> 
     window.intergramId = "6412868393";
     window.intergramCustomizations = {

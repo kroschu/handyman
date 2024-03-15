@@ -58,8 +58,6 @@ eleventyConfig.addShortcode("tiktok", (videoURL) => {
 `;
 });
 
-eleventyConfig.addGlobalData("rootURL", "https://handyman.pp.ua");
-
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
   });
