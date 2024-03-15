@@ -95,13 +95,11 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     {%include "components/lucideIcons.njk"%}
 <h3>поділитись! (чи ще щось...)</h3>
 
-{% comment %}
 <p>
   <a href="https://www.facebook.com/sharer.php?u={{ rootURL | url_encode }}{{ page.url | url_encode }}">Facebook</a> ~
   <a href="https://twitter.com/intent/tweet?url={{ rootURL | url_encode }}{{ page.url}}&text={{title | url_encode}}">Twitter</a> ~
   <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ rootURL | url_encode }}{{ page.url | url_encode }}">LinkedIn</a>
 </p>
-{% endcomment %}
 
 {% assign pageUrl = page.url | prepend: rootURL | url_encode %}
 {% assign stitle = title | url_encode %}
